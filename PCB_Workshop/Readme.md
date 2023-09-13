@@ -7,12 +7,12 @@ KiCad is an open source software suite which supports Schematic design, and PCB 
 
 - Go to https://www.kicad.org/download/ and select your operating system to start downloading the software. You will be directed to a page as shown below.
     
-    ![KiCad Download pic](link1)
+    ![KiCad Download pic](https://raw.githubusercontent.com/techclubssn/IoT-TC-2023_24/master/PCB_Workshop/img/kicad_download_page.png)
     
 - If you’re installing KiCad on Windows or MacOS, you can click this GitHub option to start downloading the installation executable. For Linux users, you can follow the command line installation steps as given in the KiCad website.
 - Once downloaded, start the installation process. It is advisable to have the settings at default and continue in the installation process. You may be prompted to install Microsoft Visual C++ Redistributable libraries, but in most cases it would happen automatically without your intervention.
 - As the installation completes, you can open KiCad 7 and make sure you’re greeted by this screen.
     
-    ![KiCad v7](link2)
+    ![KiCad v7](https://raw.githubusercontent.com/techclubssn/IoT-TC-2023_24/master/PCB_Workshop/img/kicad_homepage.png)
     
     If yes, your installation was successful and congratulations on finishing the first step in this workshop!
