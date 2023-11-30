@@ -5,7 +5,7 @@
 - In simple terms, it can be defined as “Constrained Computing devices equipped with sensors and displays (optional) interconnected to form a network for communication to target a specific use case”.
     - ********************************************************************Constrained Computing devices******************************************************************** → are computing devices but with very limited resources such as computation power (the clock rate), memory (RAM size).
     
-    ![Courtesy: Analytics Vidhya](assets/Untitled.png)
+    ![Courtesy: Analytics Vidhya](https://github.com/techclubssn/IoT-TC-2023_24/blob/master/Zenith_sessions/01_session/assets/Untitled.png)
     
     Courtesy: Analytics Vidhya
     
@@ -63,7 +63,7 @@
 
 - We will first look at the architecture of Raspberry Pi 4 to help ourselves understand what features it provides us to play around with.
 
-![Courtesy- raspberrypi.com](assets/Untitled%201.png)
+![Courtesy- raspberrypi.com](https://github.com/techclubssn/IoT-TC-2023_24/blob/master/Zenith_sessions/01_session/assets/Untitled%201.png)
 
 Courtesy- raspberrypi.com
 
@@ -100,15 +100,11 @@ Courtesy- raspberrypi.com
 - This small hardware design tip can be applied to any microcontroller or microprocessor project.
 - Don’t just directly connect the GPIO pin to the LED’s positive lead. It is highly advisable to use a resistor in series to limit the current flow. This resistor value can be calculated for our case as follows,
     
-    ![Untitled](assets/Untitled%203.png)
+    ![Untitled](https://github.com/techclubssn/IoT-TC-2023_24/blob/master/Zenith_sessions/01_session/assets/Untitled%203.png)
     
     - Since Raspberry Pi 4 uses 3.3V logic level, a logic high would mean that the GPIO port (here GPIO 40) will be set to 3.3Volts. A simple Red LED can technically turn on (the forward voltage) at 1.8 or 1.9V (Check the datasheet for these information) and the general current consumption for an LED is around 10mA. Directly connecting LED to the GPIO pin may allow for large amounts of current to flow through, which may reduce the life time of the LED. Hence we use a **********************************************current limiting resistor**********************************************.
     - The value of this current limit limiting resistor is found by,
-        
-        $$
-        R = \frac{(V_{GPIO}-V_F)}{I_{LED}}
-        $$
-        
+        $$R = \frac{(V_{GPIO}-V_F)}{I_{LED}}$$
     - In our case, $V_{GPIO}$ is 3.3V and $V_F$ is 1.8V (the forward voltage for a red LED) and Current limit is 10mA in general for LEDs.
     - Plugging in the values, we get the current limiting resistor R as 150 Ohms.
 
