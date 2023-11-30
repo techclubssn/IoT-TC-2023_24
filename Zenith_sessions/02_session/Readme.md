@@ -1,7 +1,5 @@
 # IoT - Session 2
 
-- Table of contents
-
 # General Instructions
 
 - To start typing in code, you can use the `Geany` editor or `Thony` editor or use `nano` to write the script in the terminal itself.
@@ -56,7 +54,7 @@ GPIO.setmode(GPIO.BOARD)
 - This small hardware design tip can be applied to any microcontroller or microprocessor project.
 - Don’t just directly connect the GPIO pin to the LED’s positive lead. It is highly advisable to use a resistor in series to limit the current flow. This resistor value can be calculated for our case as follows,
     
-    ![Untitled](assets/Untitled.png)
+    ![Untitled](https://github.com/techclubssn/IoT-TC-2023_24/blob/master/Zenith_sessions/02_session/assets/Untitled.png?raw=true)
     
     - Since Raspberry Pi 4 uses 3.3V logic level, a logic high would mean that the GPIO port (here GPIO 40) will be set to 3.3Volts. A simple Red LED can technically turn on (the forward voltage) at 1.8 or 1.9V (Check the datasheet for these information) and the general current consumption for an LED is around 10mA. Directly connecting LED to the GPIO pin may allow for large amounts of current to flow through, which may reduce the life time of the LED. Hence we use a **********************************************current limiting resistor**********************************************.
     - The value of this current limit limiting resistor is found by,
@@ -114,7 +112,7 @@ GPIO.setmode(GPIO.BOARD)
 - This means, when the trigger signal is sent by the Raspberry Pi to the sensor, the Echo pin stays high (5V) as along as there the reflection is not yet detected. **Connecting Echo pin directly to the Raspberry Pi’s input GPIO pin can result in hardware damages!**
 - Feed the VCC of HCSR-04 with 5V from RPi and GND with GND. Take high caution that you don’t short these as the board will be damaged beyond repair.
 
-![Untitled](assets/Untitled%201.png)
+![Untitled](https://github.com/techclubssn/IoT-TC-2023_24/blob/master/Zenith_sessions/02_session/assets/Untitled%201.png)
 
 - Hence we use a potential divider network to bring down the 5V to 3.3V so that our Raspberry Pi is safe and sound to read that 3.3V signal.
 - The circuit connection diagram is shown below. Feel free to use other GPIO pins and not necessarily the ones shown here.
@@ -184,7 +182,7 @@ if __name__ == '__main__':
 - Since the voltage produced by the IR receiver LED is analog in nature, we often use an Op-amp as a comparator to threshold the signal into two logic levels. This threshold value can be adjusted by “calibrating” the potentiometer.
 - There is no universal threshold value, and it purely depends on the operating environment, individual IR LED response, the Op-amp as well.
 
-![Untitled](assets/Untitled%202.png)
+![Untitled](https://github.com/techclubssn/IoT-TC-2023_24/blob/master/Zenith_sessions/02_session/assets/Untitled%202.png)
 
 - Play around with the threshold value and you will get some idea.
 
@@ -192,7 +190,7 @@ if __name__ == '__main__':
 
 - Use a GPIO pin for reading the V_out (can be any name, check the PCB text [technically called PCB footprint] for more info).
 
-![Untitled](assets/Untitled%203.png)
+![Untitled](https://github.com/techclubssn/IoT-TC-2023_24/blob/master/Zenith_sessions/02_session/assets/Untitled%203.png)
 
 ### Code implementation
 
@@ -204,13 +202,13 @@ if __name__ == '__main__':
 - The PIR sensor has an internal 3.3V regulator, so you can power the sensor using a 5V pin from Raspberry Pi.
 - The Output pin from the sensor follows the 3.3V logic. Hence we won’t be requiring a potential divider network for the PIR sensor.
 
-![Untitled](assets/Untitled%204.png)
+![Untitled](https://github.com/techclubssn/IoT-TC-2023_24/blob/master/Zenith_sessions/02_session/assets/Untitled%204.png)
 
 ### Circuit diagram
 
 - The below image shows the circuit diagram to interface the PIR sensor with a Raspberry Pi. Feel free to use any GPIO pin as you will only be using one input pin to read the status of the Sensor.
 
-![Untitled](assets/Untitled%205.png)
+![Untitled](https://github.com/techclubssn/IoT-TC-2023_24/blob/master/Zenith_sessions/02_session/assets/Untitled%205.png)
 
 - In the code implementation, we have used physical pin 11 (not GPIO 11) as the input pin to read the status of the sensor.
 
@@ -251,7 +249,7 @@ except:
 - The APIs provided by Raspberry Pi work out of the box and require no installation. These APIs can be run using terminal commands such as `libcamera-still` to capture a still image.
 - `libcamera` provides various image and video capturing APIs.
 
-![Image courtesy: dronebotworkshop.com](assets/Untitled%206.png)
+![Image courtesy: dronebotworkshop.com](https://github.com/techclubssn/IoT-TC-2023_24/blob/master/Zenith_sessions/02_session/assets/Untitled%206.png)
 
 Image courtesy: dronebotworkshop.com
 
@@ -290,7 +288,7 @@ The `-t 5000` here tells the `libcamera-still` to show us the camera preview for
 - The configuration window would pop up, click enabled for the camera and you can continue. (You might have to restart the board if you still can’t access the camera).
 - Reference: [https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2) (reminder that this is a quite out dated blog but it has nice animations and steps).
 
-![Untitled](assets/Untitled%207.png)
+![Untitled](https://github.com/techclubssn/IoT-TC-2023_24/blob/master/Zenith_sessions/02_session/assets/Untitled%207.png)
 
 # References
 
