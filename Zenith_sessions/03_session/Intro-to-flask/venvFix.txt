@@ -1,0 +1,12 @@
+Just paste the following and hit enter to fix the issue:
+
+Get-ExecutionPolicy
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force
+
+Youtube Video for the fix:
+https://www.youtube.com/watch?v=fEgTujWQ5Wk
+
+
+Full Django Playlist:
+https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH
