@@ -7,7 +7,7 @@
 - More resources on Flask are mentioned in [1] reference.
 
 <aside>
-➡️ The session recording is available at <Will be updated soon!>
+➡️ The session recording is available at 'Will be updated soon!'
 
 </aside>
 
@@ -89,4 +89,3 @@
 4. Websockets Vs HTTP [https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/](https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/) 
 5. MQTT [https://en.wikipedia.org/wiki/MQTT](https://en.wikipedia.org/wiki/MQTT)
 6. Implementing MQTT with an Arduino Uno as Client [https://resources.altium.com/p/getting-started-mqtt](https://resources.altium.com/p/getting-started-mqtt) 
-7. Full Django Playlist [https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
