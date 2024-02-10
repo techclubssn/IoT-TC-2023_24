@@ -3,11 +3,11 @@
 # Introduction to Python Flask
 
 - Introduction to Python Flask was presented by Nadhim T from the Web Dev domain.
-- Refer to the recorded video for notes as they won’t be documented here.
+- Refer to the recorded video and [slides](Intro-to-flask/Flask%20PPT%20-%20Nadhim-%20Web%20Dev%20-%20TechClub%20_23.pdf) for this particular session notes as they won’t be documented here.
 - More resources on Flask are mentioned in [1] reference.
 
 <aside>
-➡️ The session recording is available at `[Will be updated soon!]`
+➡️ The session recording is available at <Will be updated soon!>
 
 </aside>
 
@@ -76,6 +76,9 @@
 ### References
 
 1. For more into the web dev part of Flask
+    - To fix issues while installing Flask, checkout
+        - [Intro-to-flask/venvFix.txt](Intro-to-flask/venvFix.txt)
+        - [https://www.youtube.com/watch?v=fEgTujWQ5Wk](https://www.youtube.com/watch?v=fEgTujWQ5Wk)
     - [https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
     - [https://www.youtube.com/playlist?list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5EOgX](https://www.youtube.com/playlist?list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5EOgX)
 2. Using your old laptop as a media server [https://www.youtube.com/watch?v=lXcfKTNObOo](https://www.youtube.com/watch?v=lXcfKTNObOo) 
@@ -85,4 +88,5 @@
     - Using the Blynk App [https://youtu.be/DkJ1f5UIuak](https://youtu.be/DkJ1f5UIuak?si=t_D-Xv-7zHwYkMkn)
 4. Websockets Vs HTTP [https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/](https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/) 
 5. MQTT [https://en.wikipedia.org/wiki/MQTT](https://en.wikipedia.org/wiki/MQTT)
-6. Implementing MQTT with an Arduino Uno as Client [https://resources.altium.com/p/getting-started-mqtt](https://resources.altium.com/p/getting-started-mqtt)
+6. Implementing MQTT with an Arduino Uno as Client [https://resources.altium.com/p/getting-started-mqtt](https://resources.altium.com/p/getting-started-mqtt) 
+7. Full Django Playlist [https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
