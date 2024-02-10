@@ -1,5 +1,7 @@
 # IoT Syllabus - TechClub 2023-24
-`Progress: ====>______________________________________ - 11.628%`
+  
+`Progress: ===========>_______________________________ - 27.907%`  
+
 ### Introduction to Raspberry Pi and basic sensors  
   
 - :ballot_box_with_check:  High level understanding on the architecture  
@@ -8,15 +10,15 @@
 - :black_square_button:  Introduction to GPIO programming  
     - :ballot_box_with_check:  Basic Output scripts (LED blinking)  
     - :black_square_button:  Sensors – Theory and working  
-        - :black_square_button:  Ultrasonic  
-        - :black_square_button:  PIR  
-        - :black_square_button:  DHT11 temperature and humidity sensor  
+        - :ballot_box_with_check:  Ultrasonic  
+        - :ballot_box_with_check:  PIR  
+        - :ballot_box_with_check:  DHT11 temperature and humidity sensor (left as self exploration)  
         - :black_square_button:  Raspberry Pi camera.  
   
 ### Introduction to Arduino  
   
-- :black_square_button:  High level understanding of Arduino and its work environment  
-- :black_square_button:  Installing Arduino IDE  
+- :ballot_box_with_check:  High level understanding of Arduino and its work environment  
+- :ballot_box_with_check:  Installing Arduino IDE  
 - :black_square_button:  GPIO programming  
     - :black_square_button:  Arduino UNO to interface most of the sensors mentioned  
     - :black_square_button:  PWM  
@@ -42,7 +44,7 @@ Arduino IDE compatible microcontrollers shall be used.
   
 In case of hardware constraints, Web based simulators would be used.  
   
-- :black_square_button:  UART - Universal asynchronous receiver transmitter  
+- :ballot_box_with_check:  UART - Universal asynchronous receiver transmitter  
     - :black_square_button:  Interfacing HC-06 Bluetooth module for serial Bluetooth communication  
 - :black_square_button:  SPI - Serial Peripheral Interface  
     - :black_square_button:  Interfacing IC 74595 for serial in parallel out data transfer using SPI  
@@ -51,11 +53,11 @@ In case of hardware constraints, Web based simulators would be used.
   
 ### Backend server development to accumulate data from ESP32 (or) ESP8266  
   
-- :black_square_button:  Introduction to the light weight flask python web framework  
+- :ballot_box_with_check:  Introduction to the light weight flask python web framework  
 - :black_square_button:  Coding session for GET and POST HTTP routes.  
 - :black_square_button:  Programming ESP32 (or) ESP8266 (or Raspberry Pi 4 in case of hardware constraints) to send GET and POST requests to the server for data exchange.  
   
-### MQTT protocol for bi-directional communication  
+### MQTT protocol for bi-directional communication (this will be covered if time permits)  
   
 - :black_square_button:  General overview on MQTT protocol  
 - :black_square_button:  Setting up Mosquito broker in Raspberry Pi 4  
